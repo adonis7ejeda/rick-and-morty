@@ -15,7 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@angular-monorepo/cards": ["libs/cards/src/index.ts"]
+      "@angular-monorepo/dynamic-components": [
+        "libs/shared/dynamic-components/src/index.ts"
+      ],
+      "@angular-monorepo/generic-components": [
+        "libs/shared/generic-components/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

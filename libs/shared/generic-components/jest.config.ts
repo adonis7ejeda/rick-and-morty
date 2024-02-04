@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'cards',
-  preset: '../../jest.preset.js',
+  displayName: 'generic-components',
+  preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/libs/cards',
+  coverageDirectory: '../../../coverage/libs/shared/generic-components',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
