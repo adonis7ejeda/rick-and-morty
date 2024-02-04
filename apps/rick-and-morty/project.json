@@ -8,18 +8,26 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/rick-and-morty",
         "index": "apps/rick-and-morty/src/index.html",
         "browser": "apps/rick-and-morty/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "apps/rick-and-morty/tsconfig.app.json",
         "assets": [
           "apps/rick-and-morty/src/favicon.ico",
           "apps/rick-and-morty/src/assets"
         ],
-        "styles": ["apps/rick-and-morty/src/styles.css"],
+        "styles": [
+          "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+          "node_modules/primeng/resources/primeng.min.css",
+          "apps/rick-and-morty/src/styles.css"
+        ],
         "scripts": []
       },
       "configurations": {
